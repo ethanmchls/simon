@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simon</title>
+    <link rel="icon" href="favicon.ico" />
+  </head>
+
+  <body style="background-color: rgb(229, 254, 255);">
+    <header>
+      <h1>Simon<sup style="font-size: 12px;">&reg;</sup></h1>
+      <nav>
+        <menu>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="play.html">Game</a></li>
+          <li><a href="scores.html">Leaderboard</a></li>
+        </menu>
+      </nav>
+      <hr />
+    </header>
+
+    <main>
+      <div class="players">
+        Player:
+        <span class="player-name">Mystery player</span>
+      </div>
+      <br />
+      <div>
+        <label for="count">Score</label>
+        <input type="text" id="count" value="0" readonly />
+      </div>
+      <br />
+      <div>
+        <button>Reset</button>
+      </div>
+      <br />
+      <div>
+        <table>
+          <tr>
+            <td>
+              <button>
+                <svg
+                  aria-hidden="true"
+                  viewBox="0 0 100 100"
+                  height="100"
+                  width="100"
+                >
+                  <path d="M 95,5 95,95 5,95 Q 5,5 95,5" fill="green" />
+                </svg>
+              </button>
+            </td>
+            <td>
+              <button>
+                <svg
+                  aria-hidden="true"
+                  viewBox="0 0 100 100"
+                  height="100"
+                  width="100"
+                >
+                  <path d="M5,5 5,95 95,95 Q 95,5 5,5" fill="red" />
+                </svg>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button>
+                <svg
+                  aria-hidden="true"
+                  viewBox="0 0 100 100"
+                  height="100"
+                  width="100"
+                >
+                  <path d="M5,5 95,5 95,95 Q 5,95 5,5" fill="blue" />
+                </svg>
+              </button>
+            </td>
+            <td>
+              <button>
+                <svg
+                  aria-hidden="true"
+                  viewBox="0 0 100 100"
+                  height="100"
+                  width="100"
+                >
+                  <path d="M95,5 5,5 5,95 Q 95,95 95,5" fill="yellow" />
+                </svg>
+              </button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </main>
+
+    <footer>
+      <hr />
+      <span class="text-reset">Author:</span>
+      <br />
+      <a href="https://github.com/ethanmchls/simon">ethanmchls</a>
+    </footer>
+  </body>
+</html>
