@@ -2,28 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- Tell browsers not to scale the viewport automatically -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simon</title>
     <link rel="icon" href="favicon.ico" />
   </head>
-  <body>
-    <!-- Use header, main, and footer elements to give semantic structure -->
+  
+  <body style="background-color: rgb(229, 254, 255);">
     <header>
-      <h1>Simon<sup>&reg;</sup></h1>
-
-      <!-- Navigation elements -->
+      <h1>Simon<sup style="font-size: 12px;">&reg;</sup></h1>
       <nav>
-        <!-- Menu is a semantic alternative to <ul> that represents an interaction -->
         <menu>
           <li><a href="index.html">Home</a></li>
-          <li><a href="play.html">Play</a></li>
-          <li><a href="scores.html">Scores</a></li>
           <li><a href="about.html">About</a></li>
+          <li><a href="play.html">Game</a></li>
+          <li><a href="scores.html">Leaderboard</a></li>
         </menu>
-      </nav>
-
-      <!-- Since we don't have the ability to style we use old style HTML to give some visual formatting -->
       <hr />
     </header>
 
@@ -32,16 +25,16 @@
       <p>Login to play</p>
       <form method="get" action="play.html">
         <label for="name">Name</label>
-        <input type="text" id="name" placeholder="Your name here" />
+        <input type="text" id="name" placeholder="Enter name" />
         <button type="submit">Login</button>
       </form>
     </main>
 
     <footer>
       <hr />
-      <span class="text-reset">Author Name(s)</span>
+      <span class="text-reset">Author:</span>
       <br />
-      <a href="https://github.com/webprogramming260/simon-html">GitHub</a>
+      <a href="https://github.com/ethanmchls/simon">ethanmchls</a>
     </footer>
   </body>
 </html>
