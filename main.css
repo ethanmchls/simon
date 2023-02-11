@@ -44,11 +44,8 @@ menu {
   list-style: none;
 }
 
-.link-primary:focus {
-  accent-color: var(--pink);
-}
-
 .btn-secondary {
+  color: var(--foreground);
   background-color: var(--current-line);
   border-color: var(--foreground);
   padding: .5rem 1.5rem;
@@ -60,6 +57,7 @@ menu {
 .btn-secondary:checked,
 .btn-secondary:active {
   border-color: var(--foreground);
+  color: var(--foreground);
 }
 
 .btn-outline-primary {
