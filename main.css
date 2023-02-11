@@ -1,0 +1,93 @@
+:root {
+  --background: #282a36;
+  --current-line: #44475a;
+  --foreground: #f8f8f2;
+  --comment: #6272a4;
+  --cyan: #8be9fd;
+  --green: #50fa7b;
+  --orange: #ffb86c;
+  --pink: #ff79c6;
+  --purple: #bd93f9;
+  --red: #ff5555;
+  --yellow: #f1fa8c;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 375px;
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+main {
+  flex: 1 calc(100vh - 110px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer {
+  flex: 0 30px;
+}
+
+header {
+  flex: 0 80px;
+}
+
+menu {
+  flex: 1;
+  display: flex;
+  /*  overwrite Bootstrap so the menu does not wrap */
+  flex-direction: row !important;
+  list-style: none;
+}
+
+.link-primary:focus {
+  accent-color: var(--pink);
+}
+
+.btn-secondary {
+  background-color: var(--current-line);
+  border-color: var(--foreground);
+  padding: .5rem 1.5rem;
+}
+
+.btn-secondary.active,
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:checked,
+.btn-secondary:active {
+  border-color: var(--foreground);
+}
+
+.btn-outline-primary {
+  color: var(--pink);
+  border-color: var(--pink);
+  color: var(--pink);
+  margin-left: 5px;
+  padding: .5rem 1.5rem;
+}
+
+.btn-outline-primary.active,
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:checked,
+.btn-outline-primary:active {
+  background-color: var(--pink);
+  color: var(--background);
+  border-color: var(--pink);
+}
+
+@media (max-height: 600px) {
+  header {
+    flex: 1 100vh;
+  }
+  footer {
+    display: none;
+  }
+  main {
+    flex: 1 100vh;
+  }
+}
