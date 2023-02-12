@@ -78,6 +78,11 @@ menu {
   border-color: var(--pink);
 }
 
+.table-dark {
+  border-color: var(--pink);
+  color: var(--purple);
+}
+
 @media (max-height: 600px) {
   header {
     flex: 1 100vh;
