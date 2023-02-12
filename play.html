@@ -5,100 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simon</title>
     <link rel="icon" href="favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="main.css" />
   </head>
 
-  <body style="background-color: rgb(229, 254, 255);">
+  <body>
     <header>
-      <h1>Simon<sup style="font-size: 12px;">&reg;</sup></h1>
-      <nav>
-        <menu>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="play.html">Game</a></li>
-          <li><a href="scores.html">Leaderboard</a></li>
-        </menu>
+      <nav class="navbar navbar-expand bg-body-tertiary">
+        <div class="container-fluid">
+          <menu class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link btn btn-secondary" href="#">Simon<sup>&reg;</sup></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-outline-primary" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-outline-primary" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-outline-primary active" href="play.html">Play</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-outline-primary" href="scores.html">Scores</a>
+            </li>
+          </menu>
+        </div>
       </nav>
-      <hr />
     </header>
 
-    <main>
+    <main class="container-fluid text-center">
       <div class="players">
         Player:
         <span class="player-name">Mystery player</span>
       </div>
-      <br />
-      <div>
-        <label for="count">Score</label>
-        <input type="text" id="count" value="0" readonly />
-      </div>
-      <br />
-      <div>
-        <button>Reset</button>
-      </div>
-      <br />
-      <div>
-        <table>
-          <tr>
-            <td>
-              <button>
-                <svg
-                  aria-hidden="true"
-                  viewBox="0 0 100 100"
-                  height="100"
-                  width="100"
-                >
-                  <path d="M 95,5 95,95 5,95 Q 5,5 95,5" fill="green" />
-                </svg>
-              </button>
-            </td>
-            <td>
-              <button>
-                <svg
-                  aria-hidden="true"
-                  viewBox="0 0 100 100"
-                  height="100"
-                  width="100"
-                >
-                  <path d="M5,5 5,95 95,95 Q 95,5 5,5" fill="red" />
-                </svg>
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <button>
-                <svg
-                  aria-hidden="true"
-                  viewBox="0 0 100 100"
-                  height="100"
-                  width="100"
-                >
-                  <path d="M5,5 95,5 95,95 Q 5,95 5,5" fill="blue" />
-                </svg>
-              </button>
-            </td>
-            <td>
-              <button>
-                <svg
-                  aria-hidden="true"
-                  viewBox="0 0 100 100"
-                  height="100"
-                  width="100"
-                >
-                  <path d="M95,5 5,5 5,95 Q 95,95 95,5" fill="yellow" />
-                </svg>
-              </button>
-            </td>
-          </tr>
-        </table>
+      <div class="game">
+        <div class="button-container">
+          <button class="button-top-left"></button>
+          <button class="button-top-right"></button>
+          <button class="button-bottom-left"></button>
+          <button class="button-bottom-right"></button>
+          <div class="controls center">
+            <div class="game-name">Simon<sup>&reg;</sup></div>
+            <div class="score center">0</div>
+            <button class="btn btn-primary">Reset</button>
+          </div>
+        </div>
       </div>
     </main>
 
-    <footer>
-      <hr />
-      <span class="text-reset">Author:</span>
-      <br />
-      <a href="https://github.com/ethanmchls/simon">ethanmchls</a>
+    <footer class="bg-dark text-dark text-muted">
+      <div class="container-fluid">
+        <span class="text-reset">Author:</span>
+        <a class="link-secondary" href="https://github.com/ethanmchls/simon">ethanmchls</a>
+      </div>
     </footer>
   </body>
 </html>
