@@ -12,6 +12,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="main.css" />
+    <script src="login.js"></script>
   </head>
   
   <body>
@@ -43,10 +44,10 @@
       <div>
         <h1>Welcome</h1>
         <p>Login to play</p>
-        <form method="get" action="play.html">
-          <input type="text" id="name" placeholder="Your name here" />
-          <button type="submit" class="btn btn-outline-primary" oncl>Login</button>
-        </form>
+        <div>
+          <input id="name" placeholder="Your name here" />
+          <button class="btn btn-outline-primary" onclick="login()">Login</button>
+        </div>
       </div>
     </main>
 
