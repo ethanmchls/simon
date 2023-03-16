@@ -15,6 +15,7 @@ const scoreCollection = client.db('simon').collection('score');
 
 function addScore(score) {
   scoreCollection.insertOne(score);
+  console.log('Score added');
 }
 
 function getHighScores() {
@@ -24,6 +25,7 @@ function getHighScores() {
     limit: 10,
   };
   const cursor = scoreCollection.find(query, options);
+  console.log('High scores retrieved');
   return cursor.toArray();
 }
 
