@@ -65,6 +65,8 @@ menu {
   flex: 1;
   width: 100%;
   padding: 0.5em;
+  justify-content: left;
+  text-align: left;
 }
 
 .player-name {
